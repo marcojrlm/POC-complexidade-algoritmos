@@ -1,0 +1,19 @@
+{
+  "name": "complexidade-algoritmos",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "linear": "node src/linear.js",
+    "exponential": "node src/exponential.js",
+    "firstHash": "node src/hashTable/firstResolution.js",
+    "secondHash": "node src/hashTable/secondResolution.js",
+    "thirdHash": "node src/hashTable/thirdResolution.js",
+    "binarySearch": "node src/binarySearch/binarySearch.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
