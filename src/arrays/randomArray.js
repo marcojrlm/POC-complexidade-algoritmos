@@ -11,7 +11,7 @@ function generateUniqueRandomNumber(min, max, existingNumbers) {
 
 // Gera a matriz de elementos aleatórios não repetidos
 const array = new Set();
-while (array.size < 1000000) {
+while (array.size < 1000) {
     const randomNumber = generateUniqueRandomNumber(0, 100000000 - 1, array);
     array.add(randomNumber);
 }
@@ -20,16 +20,16 @@ while (array.size < 1000000) {
 const sortedArray = [...array].sort((a, b) => a - b);
 
 // Cria o objeto contendo a matriz
-const data = { array: sortedArray };
+const data = sortedArray;
 
 // Converte o objeto em formato JSON
 const jsonData = JSON.stringify(data);
 
 // Escreve o JSON em um arquivo
-fs.writeFile('randomArray_1000000.json', jsonData, (err) => {
+fs.writeFile('randomArray_1000.json', jsonData, (err) => {
     if (err) {
         console.error(err);
         return;
     }
-    console.log('Arquivo randomArray_1000000.json criado com sucesso.');
+    console.log('Arquivo randomArray_1000.json criado com sucesso.');
 });

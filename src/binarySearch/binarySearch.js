@@ -1,6 +1,6 @@
 import fs from "fs";
 
-const list = JSON.parse(fs.readFileSync('src/arrays/randomArray_1000000.json'));
+const list = JSON.parse(fs.readFileSync("src/arrays/randomArray_1000000.json"));
 
 function search(target) {
     let left = 0;
@@ -45,10 +45,10 @@ function search(target) {
     }
 }
 
-const answer = search(823212821);
+const answer = search(82419964);
 
 console.log("alvo encontrado? ", answer.hasElement);
 console.log("tempo: ", answer.time);
 console.log("operações: ", answer.count);
 
-//3238233, 48216549, 82321221, 99999963
+//82419964, 99989038, 74047

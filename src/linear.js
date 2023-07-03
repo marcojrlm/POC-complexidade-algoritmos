@@ -1,8 +1,8 @@
 import fs from "fs";
 
-const array = JSON.parse(fs.readFileSync("src/arrays/array_1000.json"));
-// const array = JSON.parse(fs.readFileSync("src/arrays/array_100000.json"));
-// const array = JSON.parse(fs.readFileSync("src/arrays/array_1000000.json"));
+// const array = JSON.parse(fs.readFileSync("src/arrays/randomArray_1000.json"));
+// const array = JSON.parse(fs.readFileSync("src/arrays/randomArray_100000.json"));
+// const array = JSON.parse(fs.readFileSync("src/arrays/randomArray_1000000.json"));
 
 const startsAt = Date.now();
 
@@ -16,4 +16,3 @@ let endsAt = Date.now();
 
 console.log("Operações: ", counter);
 console.log("Tempo: ", (endsAt - startsAt), "ms");
-console.log("Execuções: ", (endsAt - startsAt), "ms");
